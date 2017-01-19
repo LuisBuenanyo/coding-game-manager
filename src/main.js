@@ -225,9 +225,14 @@ const CodingManagerApplication = new Lang.Class({
 
         this._window.connect('notify::visible', Lang.bind(this, this._on_visibility_changed));
 
-        let monitor = Gdk.Display.get_default().get_primary_monitor();
-        monitor.connect('notify::workarea', Lang.bind(this, this._update_geometry));
-        this._update_geometry(monitor);
+        // update position when workarea changes
+        let screen = Gdk.Screen.get_default();
+        screen.connect('monitors-changed', Lang.bind(this,
+                                                     this._update_geometry));
+        let monitor = Gdk.Display.get_default();
+        monitor.connect('notify::workarea', Lang.bind(this,
+						      this._update_geometry));
+        this._update_geometry();
 
         Wnck.Screen.get_default().connect('active-window-changed', Lang.bind(this, this._on_active_window_changed));
     },
@@ -279,8 +284,16 @@ const CodingManagerApplication = new Lang.Class({
         }
     },
 
-    _update_geometry: function(monitor) {
-        let workarea = monitor.get_workarea();
+    _getWorkArea: function() {
+	let screen = Gdk.Screen.get_default();
+	let monitor = screen.get_primary_monitor();
+	let workArea = screen.get_monitor_workarea(monitor);
+
+	return workArea;
+    },
+
+    _update_geometry: function() {
+        let workarea = this._getWorkArea();
 
         let geometry = {
             width: this._window.get_size()[0],
