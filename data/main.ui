@@ -41,6 +41,17 @@
                         <property name="label"></property>
                       </object>
                     </child>
+                    <child>
+                      <object class="GtkButton" id="reset-button">
+                        <property name="valign">top</property>
+                        <property name="visible">True</property>
+                        <property name="label">Reset</property>
+                        <property name="halign">center</property>
+                        <style>
+                          <class name="inline-button"/>
+                        </style>
+                      </object>
+                    </child>
                   </object>
                 </child>
                 <child>
@@ -385,19 +396,6 @@
                          </child>
                       </object>
                     </child>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkButton" id="reset-button">
-                    <property name="vexpand">True</property>
-                    <property name="valign">end</property>
-                    <property name="visible">True</property>
-                    <property name="label">Reset</property>
-                    <property name="hexpand">True</property>
-                    <property name="halign">end</property>
-                    <style>
-                      <class name="inline-button"/>
-                    </style>
                   </object>
                 </child>
               </object>
