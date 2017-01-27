@@ -29,16 +29,11 @@
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
-                    <property name="margin">20</property>
+                    <property name="margin-bottom">20</property>
+		    <property name="margin-left">0</property>
                     <child>
                       <object class="GtkDrawingArea" id="player-avatar">
                         <property name="visible">True</property>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkLabel" id="player-name">
-                        <property name="visible">True</property>
-                        <property name="label"></property>
                       </object>
                     </child>
                     <child>
@@ -46,10 +41,16 @@
                         <property name="valign">top</property>
                         <property name="visible">True</property>
                         <property name="label">Reset</property>
-                        <property name="halign">center</property>
+                        <property name="halign">start</property>
                         <style>
                           <class name="inline-button"/>
                         </style>
+                      </object>
+                    </child>
+		    <child>
+                      <object class="GtkLabel" id="player-name">
+                        <property name="visible">True</property>
+                        <property name="label"></property>
                       </object>
                     </child>
                   </object>
