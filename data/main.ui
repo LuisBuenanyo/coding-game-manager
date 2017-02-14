@@ -38,7 +38,7 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="reset-button">
-                        <property name="valign">top</property>
+                        <property name="valign">start</property>
                         <property name="visible">True</property>
                         <property name="label">Reset</property>
                         <property name="halign">start</property>
