@@ -252,7 +252,7 @@ const CodingManagerApplication = new Lang.Class({
                                                    this._update_geometry));
         let monitor = display.get_primary_monitor();
         monitor.connect('notify::workarea', Lang.bind(this,
-						      this._update_geometry));
+                                                      this._update_geometry));
         this._update_geometry();
     },
 
