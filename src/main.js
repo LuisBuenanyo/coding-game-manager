@@ -298,6 +298,14 @@ const CodingManagerApplication = new Lang.Class({
         let active_window_xid = active_window ? active_window.get_xid() : 0;
         let current_window_xid = current_window ? current_window.get_xid() : 0;
 
+        // try to match transient windows
+        let transient_window = active_window.get_transient();
+
+        if (transient_window != null &&
+            current_window_xid == transient_window.get_xid()) {
+            return;
+        }
+
         if (active_window_xid !== current_window_xid) {
             this.hide();
         }
