@@ -10,6 +10,16 @@ AC_INIT([com.endlessm.Coding.Manager],
 AM_INIT_AUTOMAKE([1.12 dist-xz no-dist-gzip foreign tar-ustar no-define serial-tests -Wno-portability])
 AM_SILENT_RULES([yes])
 
+# Gettext package name
+GETTEXT_PACKAGE=$PACKAGE
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, ["$GETTEXT_PACKAGE"],
+    [Package name for Gettext])
+
+# Gettext
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.18.1])
+
 # Set up libtool
 LT_INIT
 
@@ -31,5 +41,8 @@ PKG_CHECK_MODULES(CODING_GAME_MANAGER, [glib-2.0 gio-2.0 gobject-2.0 gio-unix-2.
 
 # Substitute variables
 AC_SUBST(GLIB_COMPILE_RESOURCES)
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([
+    Makefile
+    po/Makefile.in
+])
 AC_OUTPUT

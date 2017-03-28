@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: coding-game-manager \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-22 17:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/main.ui:210
+msgctxt "notebook container"
+msgid "CURRENT CHALLENGE"
+msgstr ""
+
+#: data/main.ui:282
+msgctxt "notebook container"
+msgid "HINT"
+msgstr ""
+
+#: data/main.ui:435
+msgctxt "notebook container"
+msgid "Inventory"
+msgstr ""
+
+#: data/main.ui:331
+msgctxt "notebook container"
+msgid "PROGRESS"
+msgstr ""
+
+#: data/main.ui:165
+msgctxt "notebook container"
+msgid "Points"
+msgstr ""
+
+#: data/main.ui:43
+msgctxt "notebook container"
+msgid "Reset"
+msgstr ""
+
+#: data/main.ui:419
+msgctxt "notebook container"
+msgid "Sort by: stage, kind"
+msgstr ""
+
+#: data/main.ui:98
+msgctxt "notebook container"
+msgid "Stage"
+msgstr ""
+
+#: data/main.ui:406
+msgctxt "notebook container"
+msgid "You"
+msgstr ""
+
+#: data/main.ui:380
+msgctxt "notebook container"
+msgid "artifacts"
+msgstr ""
+
+#: data/main.ui:360
+msgctxt "notebook container"
+msgid "of"
+msgstr ""

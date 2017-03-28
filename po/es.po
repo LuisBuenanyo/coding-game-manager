@@ -1,0 +1,73 @@
+# Spanish translations for coding-game-manager package.
+# Copyright (C) 2017 THE coding-game-manager'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the coding-game-manager package.
+# ltilve <ltilve@endless-dev>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coding-game-manager \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-22 17:39+0000\n"
+"PO-Revision-Date: 2017-03-17 13:05+0000\n"
+"Last-Translator: ltilve <ltilve@endless-dev>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/main.ui:210
+msgctxt "notebook container"
+msgid "CURRENT CHALLENGE"
+msgstr "DESAFÍO ACTUAL"
+
+#: data/main.ui:282
+msgctxt "notebook container"
+msgid "HINT"
+msgstr "PISTA"
+
+#: data/main.ui:435
+msgctxt "notebook container"
+msgid "Inventory"
+msgstr "Inventario"
+
+#: data/main.ui:331
+msgctxt "notebook container"
+msgid "PROGRESS"
+msgstr "PROGRESO"
+
+#: data/main.ui:165
+msgctxt "notebook container"
+msgid "Points"
+msgstr "Puntos"
+
+#: data/main.ui:43
+msgctxt "notebook container"
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: data/main.ui:419
+msgctxt "notebook container"
+msgid "Sort by: stage, kind"
+msgstr "Ordenar por: fase, tipo"
+
+#: data/main.ui:98
+msgctxt "notebook container"
+msgid "Stage"
+msgstr "Fase"
+
+#: data/main.ui:406
+msgctxt "notebook container"
+msgid "You"
+msgstr "Tú"
+
+#: data/main.ui:380
+msgctxt "notebook container"
+msgid "artifacts"
+msgstr "artefactos"
+
+#: data/main.ui:360
+msgctxt "notebook container"
+msgid "of"
+msgstr "de"

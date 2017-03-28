@@ -25,7 +25,7 @@
                 <property name="orientation">vertical</property>
                 <property name="margin">30</property>
                 <child>
-                  <!-- A vertical box to hold the player's information -->
+                  <!-- A vertical box to hold player information -->
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
@@ -40,7 +40,7 @@
                       <object class="GtkButton" id="reset-button">
                         <property name="valign">start</property>
                         <property name="visible">True</property>
-                        <property name="label">Reset</property>
+                        <property name="label" translatable="yes" context="notebook container">Reset</property>
                         <property name="halign">start</property>
                         <style>
                           <class name="inline-button"/>
@@ -95,7 +95,7 @@
                             <child>
                               <object class="GtkLabel">
                                 <property name="visible">True</property>
-                                <property name="label">Stage</property>
+                                <property name="label" translatable="yes" context="notebook container">Stage</property>
                               </object>
                             </child>
                             <child>
@@ -162,7 +162,7 @@
                             <child>
                               <object class="GtkLabel">
                                 <property name="visible">True</property>
-                                <property name="label">Points</property>
+                                <property name="label" translatable="yes" context="notebook container">Points</property>
                                 <property name="hexpand">True</property>
                               </object>
                             </child>
@@ -207,7 +207,7 @@
                                       <object class="GtkLabel">
                                         <property name="hexpand">True</property>
                                         <property name="visible">True</property>
-                                        <property name="label">CURRENT CHALLENGE</property>
+                                        <property name="label" translatable="yes" context="notebook container">CURRENT CHALLENGE</property>
                                       </object>
                                     </child>
                                     <style>
@@ -279,7 +279,7 @@
                                             <property name="hexpand">True</property>
                                             <property name="halign">start</property>
                                             <property name="visible">True</property>
-                                            <property name="label">HINT</property>
+                                            <property name="label" translatable="yes" context="notebook container">HINT</property>
                                           </object>
                                         </child>
                                         <style>
@@ -328,7 +328,7 @@
                                             <property name="hexpand">True</property>
                                             <property name="halign">start</property>
                                             <property name="visible">True</property>
-                                            <property name="label">PROGRESS</property>
+                                            <property name="label" translatable="yes" context="notebook container">PROGRESS</property>
                                           </object>
                                         </child>
                                         <style>
@@ -357,7 +357,7 @@
                                         <child>
                                           <object class="GtkLabel">
                                             <property name="visible">True</property>
-                                            <property name="label">of</property>
+                                            <property name="label" translatable="yes" context="notebook container">of</property>
                                           </object>
                                         </child>
                                         <child>
@@ -377,7 +377,7 @@
                                         <child>
                                           <object class="GtkLabel">
                                             <property name="visible">True</property>
-                                            <property name="label">artifacts</property>
+                                            <property name="label" translatable="yes" context="notebook container">artifacts</property>
                                           </object>
                                         </child>
                                       </object>
@@ -403,7 +403,7 @@
             </child>
             <child type="tab">
               <object class="GtkLabel" id="notebook-tab-you">
-                <property name="label">You</property>
+                <property name="label" translatable="yes" context="notebook container">You</property>
               </object>
             </child>
             <child>
@@ -416,7 +416,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
-                    <property name="label">Sort by: stage, kind</property>
+                    <property name="label" translatable="yes" context="notebook container">Sort by: stage, kind</property>
                     <property name="halign">start</property>
                   </object>
                 </child>
@@ -432,7 +432,7 @@
             </child>
             <child type="tab">
               <object class="GtkLabel" id="notebook-tab-inventory">
-                <property name="label">Inventory</property>
+                <property name="label" translatable="yes" context="notebook container">Inventory</property>
               </object>
             </child>
           </object>
